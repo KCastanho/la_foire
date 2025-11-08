@@ -8,6 +8,7 @@ dotenv.config();
 app.use(express.json());
 
 // ROUTER
+const usersRouter = require('./router/users.router');
 
 
 // MONGO
@@ -20,6 +21,7 @@ mongoose
 const PORT = process.env.PORT || 8080;
 
 // PREFIX
+app.use("/api/users", usersRouter);
 
 
 // LISTEN
