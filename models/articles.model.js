@@ -30,15 +30,17 @@ const articleSchema = mongoose.Schema(
             type: mongoose.Schema.Types.ObjectId,
             ref: "Avis"
         },
-        picture: {
+        img: {
             type: String,
             required: true
         },
         img1: {
             type: String,
+            required: true
         },
         img2: {
             type: String,
+            required: true
         },
         img3: {
             type: String,
